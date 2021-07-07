@@ -15,3 +15,6 @@ Route::get('/', 'UserController@index');
 
 Route::post('users', 'UserController@store')->name('users.store');
 Route::delete('user/{user}', 'UserController@destroy')->name('users.destroy');
+
+//Ruta de recurso 
+Route::resource('pages', 'PageController'); //7 rutas
